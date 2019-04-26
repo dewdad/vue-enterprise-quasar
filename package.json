@@ -6,6 +6,7 @@
     "build": "vue-cli-service build --modern",
     "test": "run-s test:unit test:e2e",
     "lint": "run-s lint:all:*",
+    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'",
     "build:ci": "yarn build --report",
     "dev": "vue-cli-service serve",
     "dev:e2e": "cross-env VUE_APP_TEST=e2e vue-cli-service test:e2e --mode=development",
@@ -39,6 +40,7 @@
     "nprogress": "0.2.0",
     "register-service-worker": "^1.6.2",
     "vue": "2.6.10",
+    "vue-i18n": "^8.0.0",
     "vue-meta": "1.6.0",
     "vue-router": "3.0.6",
     "vuex": "3.1.0"
@@ -77,6 +79,7 @@
     "stylelint-config-recess-order": "2.0.x",
     "stylelint-config-standard": "18.3.x",
     "stylelint-scss": "3.6.x",
+    "vue-cli-plugin-i18n": "^0.6.0",
     "vue-template-compiler": "2.6.10",
     "vuepress": "0.14.x"
   },

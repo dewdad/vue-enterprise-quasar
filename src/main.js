@@ -6,6 +6,7 @@ import '@components/_globals'
 import './registerServiceWorker'
 import './styles/quasar.styl'
 import 'quasar/dist/quasar.ie.polyfills'
+import i18n from './i18n'
 // import "@quasar/extras/roboto-font/roboto-font.css";
 // import "@quasar/extras/material-icons/material-icons.css";
 // import "@quasar/extras/fontawesome-v5/fontawesome-v5.css";
@@ -60,6 +61,7 @@ if (process.env.VUE_APP_TEST === 'e2e') {
 const app = new Vue({
   router,
   store,
+  i18n,
   render: (h) => h(App),
 }).$mount('#app')
 

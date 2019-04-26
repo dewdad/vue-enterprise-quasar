@@ -7,6 +7,12 @@ module.exports = {
       rtlSupport: true,
       treeShake: true,
     },
+    i18n: {
+      locale: 'en',
+      fallbackLocale: 'en',
+      localeDir: 'locales',
+      enableInSFC: false,
+    },
   },
   transpileDependencies: [/[\\\/]node_modules[\\\/]quasar[\\\/]/],
   configureWebpack: {
