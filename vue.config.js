@@ -2,6 +2,13 @@ const appConfig = require('./src/app.config')
 
 /** @type import('@vue/cli-service').ProjectOptions */
 module.exports = {
+  pluginOptions: {
+    quasar: {
+      rtlSupport: true,
+      treeShake: true,
+    },
+  },
+  transpileDependencies: [/[\\\/]node_modules[\\\/]quasar[\\\/]/],
   configureWebpack: {
     // We provide the app's title in Webpack's name field, so that
     // it can be accessed in index.html to inject the correct title.
